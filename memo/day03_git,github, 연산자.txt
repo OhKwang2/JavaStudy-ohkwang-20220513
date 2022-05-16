@@ -1,0 +1,101 @@
+@깃
+	#Git이란?
+	- 깃(Git /ɡɪt/[5])은 컴퓨터 파일의 변경사항을 추적하고 여러 명의 사용자들 간에 해당 파일들의 작업을 조율하기 위한 분산 버전 관리 시스템이다. 또는 이러한 명령어를 가리킨다. 소프트웨어 개발에서 소스 코드 관리에 주로 사용되지만[6] 어떠한 집합의 파일의 변경사항을 지속적으로 추적하기 위해 사용될 수 있다. 기하학적 불변 이론을 바탕으로 설계됐고, 분산 버전 관리 시스템으로서 빠른 수행 속도에 중점을 두고 있는 것[7]이 특징이며 데이터 무결성,[8] 분산, 비선형 워크플로를 지원한다.[9]
+
+
+@깃허브
+	#재설치 전
+	Sourcetree 지워야 함.
+	삭제 후 
+	C:\Users\ITPS\AppData\Local
+	-> Atlrassian 데이터 삭제
+
+	#설치
+	1. Sourcetree 설치
+	https://www.sourcetreeapp.com/
+	2. Preferences 입력
+	-  Github 가입 후 github 닉네임, 이메일 작성 후 다음.
+	3. Github 접속
+	https://github.com/
+	4. 가입, 로그인
+
+	#프로젝트 생성
+	1. profile에서 New 선택
+	2. Repository name 입력, public 선택, "Add a README file" 꼭 선택 후 Creating
+
+	# Sourcetree 연결
+	1. github의 Repository의 code 클릭하여 HTTPS URL 복사
+	2. Sourcetree의 Clone에서 해당 URL 입력
+	3. 2번째 경로에 내가 현재 사용하는 workpace에 git 폴더생성 후 해당 폴더 지정
+	C:\junil\KOK_backend\workspace\git
+	4. 폴더 지정 후 내 Repository 내용 입력
+	C:\junil\KOK_backend\workspace\git\JavaStudy-ohkwang-20220513
+	5. clone 실행
+	6. 익스플로러로 실행하여 공간 확인 (.git폴더가 있어야 git 저장소임)
+
+	#Git 세팅
+	1. 다른 사용자가 입력되어 있을 경우 - 설정, 고급, 전역 사용자 설정에서 이름, 주소 변경
+
+	#commit
+	1. Sourcetree에서 익스플로러에서 열기 클릭
+	2. 파일 생성 or 작업한 파일or 폴더 선택
+	3. 스테이지에 올라가지 않은 파일 선택 후 스테이지에 올리기
+	4. 하단의 커밋 내용 입력 후 커밋 실행
+	   (협업시에는 작업 영역에 대해 세세하게 작성 후 커밋)
+	   (파일 통으로 스테이지에 올리거나 올릴 부분에 대해 편집 후 스테이지에 올릴 수 있음- 편집 후 스테이지에 올릴 경우 소스코드만 올라감.)
+	5. 해당 커밋 내용 확인 후 PUSH 실행 (클라우드에 올리기 위한 경우 PUSH 사용)
+	6. 실행시 manager-core 선택 후 로그인하여 진행
+	7. 완료 후 History확인 및 github의 Repository에서 해당 파일 업로드 된 것 확인
+	8. History에서 giyhub에 올라가있는 데이터는 origin으로 나타남.
+	9. github에 올린 데이터를 Pull을 통해 다른 작업 PC로 가져올 수 있음.
+	10. 타 작업 PC에서 github에 올라와있는 데이터를 가져오기 이전에 반드시 패치를 통해 새로고침 필요.
+
+	#특정시점으로 돌아가기
+	- History의 해당 프로젝트에서 원하는 시점의 히스토리에 체크하웃할 경우 해당 시점으로 돌아감.
+
+ 	#git 설명
+	- Local(내 PC)와 Remote(클라우드)로 구분
+	- Local은 내 PC에 물리적으로 저장되는 공간 (git)
+	- Remote는 클라우드에 저장되는 공간 (github)
+	- Git은 "Working directory" (pc에 git 연결된 작업공간, 작업자료를 add를 통해 staging area로 넘기거나 github에 push를 통해 업로드한 자료를 localrepo에서 특정 시점으로 되돌리거나 합치는 작업 수행하는 공간)
+	         "staging area" (로컬에서 작업한 데이터를 커밋하는 공간)
+	         "localrepo" (로걸에서 작업하여 커밋한 데이터가 저장되거나 github에서 가져온 자료가 1차적으로 저장되는 공간)
+
+	#github에서 가져오기
+	1. Repository의 pull 하고자 하는 프로젝트의 code url 복사
+	2. Sourcetree에서 clone 생성
+	3. 해당 url값 입력 및 해당 프로젝트 폴더 생성시 자동으로 가져와짐.
+
+@Spring 경로 변경
+	#file -> open projects from file system  -> directory -> 프로젝트 작업 폴더 선택 -> finish
+
+
+@연산자
+	#연산자란?
+	- 연산에 사용되어지는 기호를 연산자라고 하고,
+	- 항은 연산에 사용되어 지는 값을 항이라고 한다.
+	
+	#이항연산자?
+	- 항이 2개인 연산자
+
+	#단항 연산자
+	- 항이 1개인 연산자
+
+	#삼항 연산자 (조건 연산자)
+	- 항이 세개인 연산자
+	  ex) (5>3)?1:0;
+
+	#대입 연산자
+	- 말 그대로 값을 대입하는 연산자
+	  ex) =
+
+	#부호 연산자
+	- 음양을 표시
+	  ex) + / -
+
+	#산술 연산자
+	- +, -, *, /, %
+	% : 앞에 있는 항에서 뒤에 있는 항을 나누어 나머지를 구함.
+	단, 자료형도 고려 필요
+	(int) 10 / (int) 3 = (int) 3
+	10.0 / 3 = 3.333333 <= 업캐스팅 적용
