@@ -2,7 +2,7 @@ package j04_연산;
 
 import java.util.Scanner;
 
-public class Operation7 {
+public class Operation07 {
 	public static void main(String[] args) {
 		/*
 		 * 윤년은 4의 배수 이면서, 100의 배수가 아닐 때 또는 400의 배수 일때
