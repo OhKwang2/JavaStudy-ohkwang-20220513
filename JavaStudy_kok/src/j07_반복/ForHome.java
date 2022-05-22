@@ -37,14 +37,17 @@ public class ForHome {
 		
 		
 		/*1번*/
+		System.out.println("1번 답");
 		for(int i =0; i<5; i++) {
 			for(int j=0; j<i+1; j++) {
 				System.out.print("*");
 			}
 			System.out.println();
 		}
+		System.out.println("-----------");
 		
 		/*2번*/
+		System.out.println("2번 답");
 		for(int i = 0; i < 5; i++) {
 			for(int j=0; j<4-i; j++) {
 				System.out.print(" ");				
@@ -54,8 +57,10 @@ public class ForHome {
 			}
 			System.out.println();
 		}
+		System.out.println("-----------");
 		
 		/*3번*/
+		System.out.println("3번 답");
 		for(int i = 0; i < 5; i++) {
 			for(int j = 0; j < i; j++) {
 				System.out.print(" ");
@@ -65,13 +70,23 @@ public class ForHome {
 			}
 			System.out.println();
 		}
+		System.out.println("-----------");
 		
 		/*4번*/
+		System.out.println("4번 답");
 		for(int i = 0; i < 5; i++) {
-			for(int j = 0; j < 5; j++) {
-				System.out.println();
+			for(int j = 0; j < 4-i; j++) {
+				System.out.print(" ");
 			}
+			for(int z = 0; z < i*2+1; z++) {
+				System.out.print("*");
+			}
+			for(int j = 0; j < 4-i; j++) {
+				System.out.print(" ");
+			}
+			System.out.println();
 		}
+
 	}
 
 }
