@@ -1,0 +1,19 @@
+@접근지정자
+
+	#패키지 안에 패키지 만들기
+	- 패키지name.""로생성
+
+	#접근지정자
+	- 구글에서 java 접근지정자 검색해서 볼 것
+	- 해당 클래스 안에 변수와 메소드를 포괄하여 멤버라고 함
+	- 멤버 각각에 외부에서 접근할 수 있는 범위를 지정하는 것이 접근지정자(access modifier)
+	- public : 접근제한 없음
+	- protected : 동일 패키지와 상속 받은 클래스 내부에서만 접근 가능
+	- default : 동일패키지 내에서만 접근 가능
+	- private : 동일 클래스 내에서만 접근 가능
+
+
+	#Getter, Setter
+	- getter, setter 생성
+	- alt + shift + S -> generate getter and setter
+	- getter와 setter를 통해서만 다른 클래스의 정보를 가져오고 넣을 수 있도록 정보은닉

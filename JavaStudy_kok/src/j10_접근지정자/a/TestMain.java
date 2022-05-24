@@ -1,0 +1,16 @@
+package j10_접근지정자.a;
+
+import j10_접근지정자.b.Test2;
+
+public class TestMain {
+	
+	public static void main(String[] args) {
+		Test1 t1 = new Test1();
+		t1.aaa = "안녕";
+//		t1.bbb = " ";
+		
+		Test2 t2 = new Test2();
+		t2.ccc = "d";
+
+	}
+}
