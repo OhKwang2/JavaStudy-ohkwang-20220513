@@ -15,18 +15,40 @@ public class UserManagementController {
 	*/
 	
 	private UserService userService;
+	private User[] users;
 	
 	public UserManagementController(UserService userService) {
 		this.userService = userService;
+		users = new User[2];
 	}
 	
 	public void createUser() {
 		//user는 User 클래스로 생성된 객체의 주소 값
-		User user = userService.insertUser();
+//		User user = userService.insertUser();
 		
-		System.out.println("[새로 추가된 사용자]");
-		//User의 toString 호출
-		System.out.println(user.toString());
+		int indextResult = findEmptyInUsers();
+		if(indextResult != -1) {
+			users[indextResult] = userService.insertUser();
+			
+			
+			System.out.println("[새로 추가된 사용자]");
+			//User의 toString 호출
+			System.out.println(users[indextResult].toString());
+			System.out.println();
+		}else {
+			System.out.println("더 이상 사용자를 추가할 수 없습니다.");
+		}
+		
+	}
+	
+	private int findEmptyInUsers() {
+		for(int i = 0; i < users.length; i++) {
+			if(users[i] == null) {
+				return i;
+			}
+		}
+		
+		return -1;
 	}
 	
 	

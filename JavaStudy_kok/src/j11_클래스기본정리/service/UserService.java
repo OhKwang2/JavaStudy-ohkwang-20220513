@@ -29,6 +29,7 @@ public class UserService {
 		String username = null;
 		String password = null;
 		
+		scanner.nextLine();
 		System.out.print("사용자 번호 입력 : ");
 		usercode = scanner.nextLine();
 		System.out.print("이메일 : ");
