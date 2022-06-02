@@ -27,6 +27,7 @@ import java.util.Objects;
 
 public class Product {
 	
+	//변수의 자료형, 이름이 바뀌면 뒤에 getter, setter, toString, equals 등 다 바꿔야 함.
 	private int productCode;
 	private String productName;
 	private int category;
